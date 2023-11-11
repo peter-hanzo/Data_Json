@@ -2,6 +2,7 @@
 # You can see the Docker images from Apify at https://hub.docker.com/r/apify/.
 # You can also use any other image from Docker Hub.
 FROM apify/actor-python:3.9
+RAN apt-get update && apt-get install make
 
 # Second, copy just requirements.txt and Makefile into the actor image,
 # since they should be the only files that affect "make install" in the next step,
